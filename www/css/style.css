@@ -15,18 +15,6 @@ section {
     background-size:cover;
 }
 
-.bg-2 {
-	background: url('http://jessyquil.tv/img/hero.jpg') no-repeat top center fixed;
-    color:#fff;
-    background-size:cover;
-}
-
-.bg-3 {
-	background: url('http://jessyquil.tv/img/hero.jpg') no-repeat bottom center fixed;
-    color:#fff;
-    background-size:cover;
-}
-
 #footer {
     height: 60px;
     background-color:#585858;
