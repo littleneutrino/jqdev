@@ -9,20 +9,20 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         v.memory = 1024
     end
 
-    config.vm.define "mRequest" do |mRequest|
+    config.vm.define "jqdev" do |jqdev|
         # All Vagrant configuration is done here. The most common configuration
         # options are documented and commented below. For a complete reference,
         # please see the online documentation at vagrantup.com.
 
         # Every Vagrant virtual environment requires a box to build off of.
-        mRequest.vm.box = "ubuntu/trusty64"
-        mRequest.vm.box_url = "https://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box"
+        jqdev.vm.box = "ubuntu/trusty64"
+        jqdev.vm.box_url = "https://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box"
 
         # Create a forwarded port mapping which allows access to a specific port
         # within the machine from a port on the host machine. In the example below,
         # accessing "localhost:8081" will access port 80 on the guest machine.
-        mRequest.vm.network "forwarded_port", guest: 80, host: 8081
-        mRequest.vm.network "forwarded_port", guest: 443, host: 4344
+        jqdev.vm.network "forwarded_port", guest: 80, host: 8081
+        jqdev.vm.network "forwarded_port", guest: 443, host: 4344
 
         # Share an additional folder to the guest VM. The first argument is
         # the path on the host to the actual folder. The second argument is
@@ -34,6 +34,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
            vb.gui = false
         end
 
-        mRequest.vm.provision "shell", path: "./vagrant-provision.sh", privileged: true
+        jqdev.vm.provision "shell", path: "./vagrant-provision.sh", privileged: true
     end
 end
