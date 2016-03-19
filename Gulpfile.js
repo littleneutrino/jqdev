@@ -12,9 +12,11 @@ var gulp = require('gulp'),
 	jshint = require('gulp-jshint'),
 	mainBowerFiles = require('gulp-main-bower-files'),
 	pngquant = require('imagemin-pngquant'),
+	sass = require('gulp-sass'),
 	sourcemaps = require('gulp-sourcemaps'),
 	uglify = require('gulp-uglify'),
 	watch = require('gulp-watch');
+
 
 gulp.task('default', ['watch']);
 
@@ -74,12 +76,13 @@ gulp.task('minHtml', function() {
 gulp.task('minCss', ['minVendorCss', 'minAppCss']);
 
 gulp.task('minVendorCss', function() {
-	var cssFilter = filter('**/*.css');
+	var sassFilter = filter('**/*.scss');
 
 	return gulp.src('./bower.json')
 		.pipe(mainBowerFiles())
-		.pipe(cssFilter)
+		.pipe(sassFilter)
 		.pipe(sourcemaps.init())
+		.pipe(sass())
 		.pipe(concat('vendor.css'))
 		.pipe(cssnano())
 		.pipe(sourcemaps.write('.'))
