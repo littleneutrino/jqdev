@@ -30,7 +30,7 @@ gulp.task('install', function() {
 });
 
 gulp.task('clean', function() {
-	del.sync(['www/dist']);
+	return del.sync(['www/dist']);
 });
 
 gulp.task('registerWatchTasks', function() {
