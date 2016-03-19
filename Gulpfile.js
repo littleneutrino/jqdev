@@ -29,8 +29,8 @@ gulp.task('install', function() {
 		.pipe(install());
 });
 
-gulp.task('clean', function(cb) {
-	del.sync(['www/dist'], cb);
+gulp.task('clean', function() {
+	del.sync(['www/dist']);
 });
 
 gulp.task('registerWatchTasks', function() {
