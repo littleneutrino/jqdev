@@ -13,4 +13,7 @@ section {
 	background: url('http://jessyquil.tv/img/hero.jpg') no-repeat center center fixed;
     color:#000;
     background-size:cover;
+    -webkit-box-shadow: inset 0px -10px 10px 0px rgba(0,0,0,0.22);
+    -moz-box-shadow: inset 0px -10px 10px 0px rgba(0,0,0,0.22);
+    box-shadow: inset 0px -10px 10px 0px rgba(0,0,0,0.22);
 }
