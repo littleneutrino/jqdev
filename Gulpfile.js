@@ -79,8 +79,6 @@ gulp.task('minVendorCss', function() {
 	return gulp.src('./bower.json')
 		.pipe(mainBowerFiles())
 		.pipe(cssFilter)
-		.pipe(addsrc.prepend('bower_components/html5-boilerplate/dist/css/main.css'))
-		.pipe(addsrc.prepend('bower_components/html5-boilerplate/dist/css/normalize.css'))
 		.pipe(sourcemaps.init())
 		.pipe(concat('vendor.css'))
 		.pipe(cssnano())
