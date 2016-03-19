@@ -1,1 +1,4 @@
 .vagrant/
+www/dist/
+bower_components/
+node_modules/
