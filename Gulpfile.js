@@ -73,27 +73,13 @@ gulp.task('minHtml', function() {
 		.pipe(gulp.dest('www/dist'));
 });
 
-gulp.task('minCss', ['minVendorCss', 'minAppCss']);
-
-gulp.task('minVendorCss', function() {
-	var sassFilter = filter('**/*.scss');
-
-	return gulp.src('./bower.json')
-		.pipe(mainBowerFiles())
-		.pipe(sassFilter)
-		.pipe(sourcemaps.init())
-		.pipe(sass())
-		.pipe(concat('vendor.css'))
-		.pipe(cssnano())
-		.pipe(sourcemaps.write('.'))
-		.pipe(gulp.dest('www/dist/css'));
-});
+gulp.task('minCss', ['minAppCss']);
 
 gulp.task('minAppCss', function() {
-	return gulp.src('www/src/css/**/*.css')
+	return gulp.src('www/src/css/**/*.scss')
 		.pipe(sourcemaps.init())
+		.pipe(sass())
 		.pipe(cssnano())
-		.pipe(concat('app.css'))
 		.pipe(sourcemaps.write('.'))
 		.pipe(gulp.dest('www/dist/css'));
 });
