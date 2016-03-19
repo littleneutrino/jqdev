@@ -108,7 +108,7 @@ gulp.task('minVendorJs', function() {
 		.pipe(sourcemaps.init())
 		.pipe(concat('vendor.js'))
 		.pipe(uglify())
-		.pipe(sourcemaps.write())
+		.pipe(sourcemaps.write('.'))
 		.pipe(gulp.dest('www/dist/js'));
 });
 
