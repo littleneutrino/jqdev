@@ -21,6 +21,7 @@
     "angular-bootstrap": "^1.2.4",
     "bootstrap-sass": "^3.3.6",
     "angular-ui-router": "^0.2.18",
-    "angular-resource": "^1.5.1"
+    "angular-resource": "^1.5.1",
+    "jquery": "^2.2.2"
   }
 }
