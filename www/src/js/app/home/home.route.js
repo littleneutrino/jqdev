@@ -8,7 +8,8 @@
       .state('home', {
         url: '/',
         templateUrl: 'dist/js/app/home/home.html',
-        controller: 'HomeController'
+        controller: 'HomeController',
+        controllerAs: 'vm'
       });
     }]);
 })();
