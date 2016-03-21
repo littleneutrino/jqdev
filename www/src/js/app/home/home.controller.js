@@ -3,9 +3,9 @@
 
   angular.module('jessyQuilTv')
   .controller('HomeController',
-  ['TwitchStreamsService', 'twitchUsernameConstant', 'twitchVideoConstant', HomeController]);
+  ['TwitchStreamsService', 'twitchUsernameConstant', 'twitchVideoConstant', '$sce', HomeController]);
 
-  function HomeController(service, username, getVideo) {
+  function HomeController(service, username, getVideo, $sce) {
     var vm = this;
 
     vm.displayVideo = false;
@@ -14,7 +14,7 @@
     service.get(function(channel) {
       if(channel.channel !== null) {
         vm.displayVideo = true;
-        vm.videoSrc = getVideo(username);
+        vm.videoSrc = $sce.trustAsResourceUrl(getVideo(username));
       }
     });
   }
