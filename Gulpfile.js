@@ -108,10 +108,10 @@ gulp.task('jshint', function() {
 
 gulp.task('minAppJs', ['jshint'], function() {
 	return gulp.src(['www/src/js/**/*.js'])
+	  .pipe(sourcemaps.init())
 		.pipe(angularFileSort())
-		.pipe(sourcemaps.init())
 		.pipe(concat('app.js'))
-		.pipe(uglify())
+		// .pipe(uglify())
 		.pipe(sourcemaps.write('.'))
 		.pipe(gulp.dest('www/dist/js'));
 });

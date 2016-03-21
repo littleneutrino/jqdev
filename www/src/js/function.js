@@ -44,4 +44,4 @@
     $('.bg-2').parallax({
     	speed :	0.25
     });
-})();
+})(jQuery);

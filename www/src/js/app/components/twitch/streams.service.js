@@ -19,7 +19,7 @@
       });
 
     this.get = function(callback) {
-      $resource.get(function(stream) {
+      streams.get(function(stream) {
         callback(stream);
       });
     };
