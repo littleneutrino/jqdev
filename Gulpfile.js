@@ -111,7 +111,7 @@ gulp.task('minAppJs', ['jshint'], function() {
 	  .pipe(sourcemaps.init())
 		.pipe(angularFileSort())
 		.pipe(concat('app.js'))
-		// .pipe(uglify())
+	  // .pipe(uglify())
 		.pipe(sourcemaps.write('.'))
 		.pipe(gulp.dest('www/dist/js'));
 });
