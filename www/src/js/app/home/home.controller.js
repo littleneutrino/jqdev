@@ -12,7 +12,7 @@
     vm.videoSrc = null;
 
     service.get(function(channel) {
-      if(channel.channel !== null) {
+      if (!(channel.stream === null)) {
         vm.displayVideo = true;
         vm.videoSrc = $sce.trustAsResourceUrl(getVideo(username));
       }

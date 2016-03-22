@@ -2,5 +2,5 @@
   'use strict';
 
   angular.module('jessyQuilTv')
-  .constant('twitchUsernameConstant', 'tehMorag');
+  .constant('twitchUsernameConstant', 'jessyQuil');
 })();
