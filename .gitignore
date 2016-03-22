@@ -1,4 +1,4 @@
 .vagrant/
-www/dist/
+#www/dist/
 bower_components/
 node_modules/

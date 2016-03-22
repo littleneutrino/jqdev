@@ -47,7 +47,7 @@ gulp.task('registerWatchTasks', function() {
 		gulp.start('minVendorCss');
 	});
 
-	watch('www/src/css/**/*.css', function() {
+	watch('www/src/css/**/*.scss', function() {
 		gulp.start('minAppCss');
 	});
 
