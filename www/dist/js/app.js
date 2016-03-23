@@ -3,7 +3,8 @@
 
   angular.module('jessyQuilTv', [
     'ngResource',
-    'ui.router'
+    'ui.router',
+    'ui.bootstrap'
   ]);
 })();
 
