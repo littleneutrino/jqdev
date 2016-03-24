@@ -36,13 +36,21 @@ section {
   -moz-box-shadow: 0px -10px 10px 0px rgba(0,0,0,0.22);
   box-shadow: 0px -10px 10px 0px rgba(0,0,0,0.22);
   margin-top: 450px;
-  background-color: #fff;
+  background-color: #222222;
 
 }
 
 .navbar-default {
   background-color: #507873;
 }
-.navbar-nav>li>a {
-  color: #fff;
+.navbar-nav > li > a {
+  text-color: #fff;
+}
+
+.panel-footer {
+  background-color: #a06363;
+}
+
+.panel-default>.panel-heading {
+  background-color: #a06363;
 }
