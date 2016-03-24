@@ -54,6 +54,9 @@ section {
 .navbar-text {
     color: #FFF;
 }
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-text {
+  color: #fff;
+}
 
 .panel-default>.panel-heading {
   background-color: #a06363;
