@@ -36,7 +36,7 @@ section {
   -moz-box-shadow: 0px -10px 10px 0px rgba(0,0,0,0.22);
   box-shadow: 0px -10px 10px 0px rgba(0,0,0,0.22);
   margin-top: 450px;
-  background-color: #222222;
+  background-color: #404040;
 
 }
 
@@ -49,6 +49,10 @@ section {
 
 .panel-footer {
   background-color: #a06363;
+}
+
+.navbar-text {
+    color: #FFF;
 }
 
 .panel-default>.panel-heading {
