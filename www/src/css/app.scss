@@ -79,6 +79,11 @@ section {
   font-size: 18px;
 }
 
+.social li
+{
+    float: left;
+}
+
 svg path {
   fill: #fff;
 }
@@ -90,4 +95,24 @@ svg:hover path {
 svg {
   width: 20px;
   height: 20px;
+}
+
+.navbar-default .navbar-toggle
+{
+    border: none;
+}
+
+.navbar-default .navbar-toggle .icon-bar
+{
+    background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover
+{
+    background-color: transparent;
+}
+
+.navbar-default .navbar-brand
+{
+    color: #fff;
 }
