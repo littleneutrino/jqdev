@@ -4,6 +4,10 @@
     height:50px;
 }
 
+body{
+  background-color: #333232;
+}
+
 section {
     //height:500px;
     padding-top:50px;
@@ -36,7 +40,7 @@ section {
   -moz-box-shadow: 0px -10px 10px 0px rgba(0,0,0,0.22);
   box-shadow: 0px -10px 10px 0px rgba(0,0,0,0.22);
   margin-top: 450px;
-  background-color: #404040;
+  background-color: #f0f0f0;
 
 }
 
@@ -57,7 +61,16 @@ section {
 .navbar-default .navbar-nav>li>a, .navbar-default .navbar-text {
   color: #fff;
 }
-
+.panel {
+  border: none;
+  margin-top: 3rem;
+}
 .panel-default>.panel-heading {
   background-color: #a06363;
+  color: #fafafa;
+}
+
+.panel-body {
+  background-color: #fafafa;
+
 }
