@@ -3,6 +3,7 @@
 
   angular.module('jessyQuilTv', [
     'ngResource',
-    'ui.router'
+    'ui.router',
+    'twitter.timeline'
   ]);
 })();
